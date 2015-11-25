@@ -86,7 +86,7 @@ public class EncodingTest extends HttpUnitTest {
             String result[]=HttpUnitUtils.parseContentTypeHeader(invalidHeader);
             fail();
         } catch (IllegalArgumentException iae) {
-            assertEquals( "Attempting to parse invalid header", iae.getMessage() );
+            assertEquals( "header", "Attempting to parse invalid header" , iae.getMessage() );
         }
     }
 

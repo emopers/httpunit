@@ -83,7 +83,7 @@ public class EncodingTest extends HttpUnitTest {
     public void testParseEmptyHeader() throws Exception {
         String invalidHeader = "";
         try {
-            String result[]= HttpUnitUtils.parseContentTypeHeader(invalidHeader);
+            String result[]=HttpUnitUtils.parseContentTypeHeader(invalidHeader);
             fail();
         } catch (IllegalArgumentException iae) {
             assertEquals( "Attempting to parse invalid header", iae.getMessage() );
